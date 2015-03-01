@@ -149,7 +149,7 @@
   </head>
   <body>
 
-    <a href="javascript:void(0)" class="fab btn btn-default btn-fab btn-raised mdi-action-grade"></a>
+    <a data-target="#source-modal" data-toggle="modal"  class="withripple fab btn btn-default btn-fab btn-raised mdi-content-filter-list"></a>
 
     <div class="header-panel shadow-z-2">
       <div class="container-fluid">
@@ -162,11 +162,91 @@
     </div>
 
 
+
       <div id="map-canvas">
 
     </div>
 
-
+    <div id="source-modal" role="dialog" class="modal fade" tabindex="-1">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title">Select a trip</h4>
+          </div>
+          <div class="modal-body">
+            <div class="list-group">
+              <div class="list-group-item">
+                <div class="row-action-primary">
+                  <i class="mdi-maps-directions-train"></i>
+                </div>
+                <div class="row-content">
+                  <div class="least-content">10mi</div>
+                  <h2 class="list-group-item-heading"><a href="#">Trip 1</a></h2>
+                  <p>Trip made by train 1</p>
+                </div>
+              </div>
+              <div class="list-group-separator"></div>
+              <div class="list-group-item">
+                <div class="row-action-primary">
+                  <i class="mdi-maps-directions-bus"></i>
+                </div>
+                <div class="row-content">
+                  <div class="least-content">49mi</div>
+                  <h2 class="list-group-item-heading"><a href="#">Trip 2</a></h2>
+                  <p>Trip made by truck 5</p>
+                </div>
+              </div>
+              <div class="list-group-separator"></div>
+              <div class="list-group-item">
+                <div class="row-action-primary">
+                  <i class="mdi-maps-directions-car"></i>
+                </div>
+                <div class="row-content">
+                  <div class="least-content">26mi</div>
+                  <h2 class="list-group-item-heading"><a href="#">Trip 3</a></h2>
+                  <p>Trip made by car 1</p>
+                </div>
+              </div>
+              <div class="list-group-separator"></div>
+              <div class="list-group-item">
+                <div class="row-action-primary">
+                  <i class="mdi-maps-directions-car"></i>
+                </div>
+                <div class="row-content">
+                  <div class="least-content">55mi</div>
+                  <h2 class="list-group-item-heading"><a href="#">Trip 4</a></h2>
+                  <p>Trip made by car 7</p>
+                </div>
+              </div>
+              <div class="list-group-separator"></div>
+              <div class="list-group-item">
+                <div class="row-action-primary">
+                  <i class="mdi-maps-directions-train"></i>
+                </div>
+                <div class="row-content">
+                  <div class="least-content">90mi</div>
+                  <h2 class="list-group-item-heading"><a href="#">Trip 5</a></h2>
+                  <p>Trip made by train 3</p>
+                </div>
+              </div>
+              <div class="list-group-separator"></div>
+              <div class="list-group-item">
+                <div class="row-action-primary">
+                  <i class="mdi-maps-directions-bus"></i>
+                </div>
+                <div class="row-content">
+                  <div class="least-content">67mi</div>
+                  <h2 class="list-group-item-heading"><a href="#">Trip 6</a></h2>
+                  <p>Trip made by truck 2</p>
+                </div>
+              </div>
+              <div class="list-group-separator"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
 
