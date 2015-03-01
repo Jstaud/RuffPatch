@@ -21,4 +21,3 @@ function initialize() {
 
 }
 google.maps.event.addDomListener(window, 'load', initialize);
-google.maps.event.addDomListener(document.getElementById("trip1"), 'viewTrip1', initialize);
