@@ -118,11 +118,27 @@
       #source-modal h4 {
         color: black;
       }
+
+      #map-canvas {
+          top: 0;
+          bottom: 0;
+          position: absolute;
+          z-index: -1;
+          width: 100%; 
+          height: 100% 
+      }
     </style>
 
 
     <!-- jQuery -->
     <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+
+    <!-- Google Maps -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCpFVwVUPdVdfa7CMZi99dPEzSIgpwAh9c">
+    </script>
+    <script src="scripts/maps.js"></script>
+
+
 
   </head>
   <body>
@@ -135,7 +151,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="javascript:void(0)">Brand</a>
+        <a class="navbar-brand" href="javascript:void(0)">Ruff Patch</a>
       </div>
       <div class="navbar-collapse collapse navbar-responsive-collapse">
         <ul class="nav navbar-nav">
@@ -157,7 +173,11 @@
       </div>
     </div>
 
-
+    
+      <div id="map-canvas">
+          
+    </div>
+    
 
 
 
@@ -277,6 +297,8 @@
     <script>
       $("#dropdown-menu select").dropdown();
     </script>
+
+
 
   </body>
 </html>
