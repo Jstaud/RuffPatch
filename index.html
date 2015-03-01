@@ -136,7 +136,8 @@
       }
     </style>
 
-
+    <script src="bower_components/sweetalert/lib/sweet-alert.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="bower_components/sweetalert/lib/sweet-alert.css">
     <!-- jQuery -->
     <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
 
@@ -267,9 +268,35 @@
 <!--    List Data-->
     <script>
       $("#trip1").click(function(){
+        sweetAlert("Hello world!");
+        map.fitBounds(bounds);
+        var listener = google.maps.event.addListener(map, "idle", function() {
+          if (map.getZoom() > 16) map.setZoom(16);
+          google.maps.event.removeListener(listener);
+        });
 
+      });
+      $("#trip2").click(function(){
+        sweetAlert("Hello world!");
 
-      };
+      });
+      $("#trip3").click(function(){
+        sweetAlert("Hello world!");
+
+      });
+      $("#trip4").click(function(){
+        sweetAlert("Hello world!");
+
+      });
+      $("#trip5").click(function(){
+        sweetAlert("Hello world!");
+
+      });
+      $("#trip6").click(function(){
+        sweetAlert("Hello world!");
+
+      });
+
     </script>
 
     <!-- Sliders -->
